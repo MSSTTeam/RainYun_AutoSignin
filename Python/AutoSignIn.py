@@ -1,5 +1,5 @@
 """
-本项目使用WTFPL进行Private公开（？）
+使用MPL2.0公开代码
 雨云官方文档：https://apifox.com/apidoc/shared-a4595cc8-44c5-4678-a2a3-eed7738dab03/api-69942942
 """
 import random
@@ -15,15 +15,15 @@ import os
 config = {}
 
 # 生成配置文件
-if not os.path.exists("../../../../Desktop/badidea/config.txt"):
+if not os.path.exists("/config.txt"):
     lines = ["api_key="]
-    f = open("../../../../Desktop/badidea/config.txt", "w")
+    f = open("/config.txt", "w")
     f.writelines(line + '\n' for line in lines)
     f.close()
     input("配置文件已创建！现在，你需要前往项目文件夹或者程序文件夹找到config.txt并按照要求编辑（按回车键退出）")
     sys.exit(1)
 else:
-    f = open('../../../../Desktop/badidea/config.txt')
+    f = open('/config.txt')
     for line in f.readlines():
         split = line.split("=")
         config[split[0]] = split[1].strip()
