@@ -1,0 +1,7 @@
+[tool.lndl.nuitka.cli]
+main = "Python/AutoSignIn.py"
+# --main=main.py
+standalone = true
+onefile = true
+[tool.lndl.nuitka]
+#script = "xxx.py"
