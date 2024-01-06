@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo "RainYun AutoSign Script By IcyMichiko"
-echo "Ver 0.0.1 请勿分享"
 echo "------------------------"
 echo "1.增加一个自动签到"
 echo "2.卸载全部服务"
